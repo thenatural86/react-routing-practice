@@ -9,6 +9,9 @@ function App() {
       <header></header>
       <main>
         <Switch>
+          <Route exact path='/'>
+            <Redirect to='/quotes' />
+          </Route>
           <Route exact path='/quotes'>
             <Quotes />
           </Route>
