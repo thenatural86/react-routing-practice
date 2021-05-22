@@ -1,9 +1,7 @@
 import classes from './QuoteItem.module.css'
-import { Link, useParams } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const QuoteItem = (props) => {
-  console.log(props)
-  const params = useParams()
   return (
     <li className={classes.item}>
       <figure>
