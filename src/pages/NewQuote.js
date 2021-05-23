@@ -16,13 +16,14 @@ const NewQuote = () => {
 
   const addQuoteHandler = (quoteData) => {
     sendRequest(quoteData)
-
-    history.push('/quotes')
   }
   return (
     <div>
       <h1>New Quote Page</h1>
-      <QuoteForm onAddQuote={addQuoteHandler} />
+      <QuoteForm
+        isLoading={status === 'pending'}
+        onAddQuote={addQuoteHandler}
+      />
     </div>
   )
 }
